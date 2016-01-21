@@ -42,7 +42,7 @@ convert "oYMU1_Out.png" "oYMU1_Out.gif"
 
 convert logo: -fuzz 15%% -transparent White file500.png
 
-converter ^
+CONVERT ^
   qqq.png ^
   ( ^
     +clone -fill red ^
