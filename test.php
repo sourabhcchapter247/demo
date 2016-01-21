@@ -42,7 +42,7 @@ convert "oYMU1_Out.png" "oYMU1_Out.gif"
 
 convert logo: -fuzz 15%% -transparent White file500.png
 
-convert ^
+CONVERT ^
   qqq.png ^
   ( ^
     +clone -fill red ^
@@ -62,4 +62,7 @@ convert file500.png -alpha extract -threshold 0 -clone 0
 
 \( -clone 1 -blur 10x65000 -threshold 0 \) \( -clone 2 -fill red -opaque white \) \( -clone 3 -clone 0 -clone 1 -alpha off -compose over -composite \) \ -delete 0,1,3 +swap -alpha off -compose copy_opacity -composite \ file500_redborder.png 
 
+
 abc
+
+
